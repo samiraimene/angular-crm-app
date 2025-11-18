@@ -1,0 +1,20 @@
+<h2>Détails du contact</h2>
+
+<div *ngIf="contact; else notFound">
+  <p><strong>Nom :</strong> {{ contact.firstName }} {{ contact.lastName }}</p>
+  <p><strong>Email :</strong> {{ contact.email }}</p>
+  <p><strong>Téléphone :</strong> {{ contact.phone }}</p>
+  <p><strong>Entreprise :</strong> {{ contact.company }}</p>
+  <p><strong>Poste :</strong> {{ contact.jobTitle }}</p>
+  <p><strong>Catégorie :</strong> {{ contact.categoryId }}</p>
+  <p><strong>Notes :</strong> {{ contact.notes }}</p>
+
+  <br />
+
+  <button [routerLink]="['/contacts', contact.id, 'edit']">Modifier</button>
+  <button (click)="delete()" style="color:red;">Supprimer</button>
+</div>
+
+<ng-template #notFound>
+  <p>Contact introuvable 📛</p>
+</ng-template>

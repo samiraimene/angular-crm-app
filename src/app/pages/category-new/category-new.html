@@ -1,0 +1,8 @@
+<h2>Nouvelle catégorie</h2>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <label>Nom de la catégorie</label>
+  <input formControlName="name">
+
+  <button type="submit" [disabled]="form.invalid">Créer</button>
+</form>

@@ -1,0 +1,29 @@
+<h2>Modifier contact</h2>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <label>Prénom</label>
+  <input formControlName="firstName" />
+
+  <label>Nom</label>
+  <input formControlName="lastName" />
+
+  <label>Email</label>
+  <input formControlName="email" />
+
+  <label>Téléphone</label>
+  <input formControlName="phone" />
+
+  <label>Entreprise</label>
+  <input formControlName="company" />
+
+  <label>Poste</label>
+  <input formControlName="jobTitle" />
+
+  <label>Catégorie</label>
+  <input formControlName="categoryId" />
+
+  <label>Notes</label>
+  <textarea formControlName="notes"></textarea>
+
+  <button type="submit" [disabled]="form.invalid">Sauvegarder</button>
+</form>

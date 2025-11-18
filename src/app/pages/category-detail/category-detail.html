@@ -1,0 +1,13 @@
+<h2>Catégorie : {{ categoryId }}</h2>
+
+<div *ngIf="contacts.length === 0">
+  Aucun contact dans cette catégorie.
+</div>
+
+<ul *ngIf="contacts.length > 0">
+  <li *ngFor="let c of contacts">
+    <strong>{{ c.firstName }} {{ c.lastName }}</strong>
+    ({{ c.email }})
+    <a [routerLink]="['/contacts', c.id]">Voir</a>
+  </li>
+</ul>

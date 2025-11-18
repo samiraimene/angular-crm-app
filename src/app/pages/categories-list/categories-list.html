@@ -1,0 +1,12 @@
+<h2>Catégories</h2>
+
+<div *ngIf="categories.length === 0">
+  Aucune catégorie.
+</div>
+
+<ul *ngIf="categories.length > 0">
+  <li *ngFor="let cat of categories">
+    <strong>{{ cat }}</strong>
+    <a [routerLink]="['/categories', cat]">Voir contacts</a>
+  </li>
+</ul>
