@@ -1,59 +1,96 @@
-# ContactCrm
+# 📌 Mini CRM – Application Angular (Contacts, Catégories & Favoris)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
+Application CRM minimaliste développée avec **Angular 17+**, permettant de gérer des **contacts**, **catégories** et **favoris**, tout en démontrant une architecture moderne et propre basée sur :
 
-## Development server
+- **Standalone Components**
+- **Angular Router**
+- **Reactive Forms**
+- **LocalStorage**
+- **Services & logique métier structurée**
+- **Routing modulaire**
 
-To start a local development server, run:
+Ce projet met en avant mes compétences en **TypeScript**, **architecture front-end**, **gestion d’état local** et **structuration d'application web professionnelle**.
+
+---
+
+## 🚀 Fonctionnalités
+
+### 👤 Gestion des contacts
+- Ajout, modification et suppression d’un contact  
+- Listing propre et filtrable  
+- Système de favoris ⭐  
+- Stockage local (aucune API externe)
+
+### 🗂️ Gestion des catégories
+- Ajout et suppression de catégories  
+- Association des contacts à une catégorie
+
+### ⭐ Favoris
+- Marquer / dé-marquer un contact comme favori  
+- Page dédiée aux favoris
+
+### 🧭 Navigation Angular
+- Navigation multi-pages (Dashboard, Contacts, Categories, Favoris)  
+- Router Angular configuré avec routes modulaires
+
+---
+
+## 🛠️ Technologies utilisées
+
+- **Angular 17+**  
+- **TypeScript**  
+- **Standalone Components**  
+- **Reactive Forms**  
+- **Angular Router**  
+- **HTML / SCSS**  
+- **LocalStorage API**  
+
+---
+
+## 📂 Structure du projet (résumé)
+
+src/
+├── app/
+│ ├── components/ # Composants UI
+│ ├── pages/ # Pages principales
+│ ├── services/ # Gestion logique + stockage
+│ ├── models/ # Types & interfaces
+│ └── app.routes.ts # Routing Angular
+└── assets/
+
+
+
+## ▶️ Lancer le projet en local
 
 ```bash
+npm install
 ng serve
-```
+Puis ouvrir :
+👉 http://localhost:4200/
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
+📦 Build production
+bash
+Copier le code
 ng build
-```
+Les fichiers seront disponibles dans /dist.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+🎓 Objectif pédagogique
+Ce projet a été réalisé pour :
 
-## Running unit tests
+Maîtriser Angular moderne
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Utiliser les Reactive Forms efficacement
 
-```bash
-ng test
-```
+Gérer un état local propre via services
 
-## Running end-to-end tests
+Construire une application structurée et évolutive
 
-For end-to-end (e2e) testing, run:
+Démontrer mes compétences front-end
 
-```bash
-ng e2e
-```
+👤 Auteur
+Samir Aimene
+Étudiant en développement informatique
+📬 samiraimene67@gmail.com
+linkedin : https://www.linkedin.com/in/samir-aimene/
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
